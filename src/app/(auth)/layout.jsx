@@ -2,10 +2,10 @@ import Image from "next/image"
 import { cookies } from "next/headers"
 import { redirect } from "next/navigation";
 const Layout = async ({ children }) => {
-    const accessToken = await cookies().get('accessToken')?.value;
-    if (accessToken) {
-        redirect('/');
-    }
+    // const accessToken = await cookies().get('accessToken')?.value;
+    // if (accessToken) {
+    //     redirect('/');
+    // }
 
 
     return (
