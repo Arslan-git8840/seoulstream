@@ -10,17 +10,21 @@ const Layout = async ({ children }) => {
     //     redirect('/login');
     // }
     return (
-        <div className="min-h-screen md:px-4 px-2 py-2">
-            <div>
-                <Header />
-            </div>
-            <div className="flex">
+        <div className="min-h-screen bg-[#EAEAEA] dark:bg-black p-3">
+
+            <div className="flex gap-2">
                 {/* sidebar */}
                 <div>
                     <Sidebar />
                 </div>
-                <div className="p-4 h-screen overflow-scroll">
-                    {children}
+                <div >
+                    <div>
+                        <Header />
+                    </div>
+                    <div className="sm:p-2 rounded-2xl pr-0 h-[87vh] overflow-scroll home">
+                        {children}
+                    </div>
+
                 </div>
             </div>
 

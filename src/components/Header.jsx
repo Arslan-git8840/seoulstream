@@ -7,31 +7,16 @@ import Link from 'next/link';
 
 const Header = () => {
     return (
-        <div className="flex justify-between items-center w-full gap-4 ">
-            {/* Logo Section */}
-            <div className="flex-shrink-0 flex items-center sm:gap-2 gap-1">
-                <Link href='/'>
-                <Image
-                    src="/youtube-icon.svg"
-                    width={50}
-                    height={50}
-                    alt="icon"
-                    priority
-                />
-                </Link>
-                <h1>SeoulStream</h1>
-            </div>
-
+        <div className="flex flex-1 w-full gap-4 py-2 px-2 dark:bg-[#0C0E10] bg-white rounded-3xl">
             {/* Search Bar and Avatar */}
-            <div className="flex items-center sm:gap-4 flex-1 justify-end">
-                <div className="relative flex-1 max-w-xs sm:max-w-lg">
-                    <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-black" size={20}/>
+            <div className="flex justify-center items-center gap-2 sm:gap-4 w-full">
+                <div className="relative flex-1 w-full sm:max-w-lg">
                     <Input
                         type="text"
-                        className="w-full px-4 py-2 pl-10 border-2 border-black rounded-full placeholder:text-black focus:outline-none"
+                        className="w-full h-12 px-4 py-2 focus:outline-none dark:focus:border-none bg-[#F3F3F3] dark:bg-black rounded-xl text-lg"
                         placeholder="Search"
                     />
-                </div>
+                </div>  
 
                 <div className="flex-shrink-0 md:block hidden p-2">
                     <AvatarDemo />

@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Red_Hat_Display } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner"
+import { ThemeProvider } from "@/components/theme-provider"
 
 const exo = Red_Hat_Display({
   subsets: ["latin"],
@@ -17,7 +18,14 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={exo.className}      
       >
-        {children}
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
         <Toaster />
       </body>
     </html>
