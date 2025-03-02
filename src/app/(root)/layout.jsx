@@ -10,7 +10,7 @@ const Layout = async ({ children }) => {
     //     redirect('/login');
     // }
     return (
-        <div className="min-h-screen bg-[#EAEAEA] dark:bg-black p-3">
+        <div className="min-h-screen bg-[#EAEAEA] dark:bg-black p-[6px] sm:p-3">
 
             <div className="flex gap-2">
                 {/* sidebar */}
