@@ -1,9 +1,7 @@
-import Image from 'next/image';
 import React from 'react';
 import { Input } from './ui/input';
 import { AvatarDemo } from './UseAvatar';
-import { Search } from 'lucide-react';
-import Link from 'next/link';
+
 
 const Header = () => {
     return (
@@ -13,7 +11,7 @@ const Header = () => {
                 <div className="relative flex-1 w-full sm:max-w-lg">
                     <Input
                         type="text"
-                        className="w-full h-12 px-4 py-2 focus:outline-none dark:focus:border-none bg-[#F3F3F3] dark:bg-black rounded-xl text-lg"
+                        className="w-full h-12 px-4 py-2 focus:outline-none dark:focus:border-none bg-[#F3F3F3] dark:bg-black rounded-xl text-sm sm:text-base"
                         placeholder="Search"
                     />
                 </div>  
@@ -21,7 +19,6 @@ const Header = () => {
                 <div className="flex-shrink-0 md:block hidden p-2">
                     <AvatarDemo />
                 </div>
-
             </div>
         </div>
     );

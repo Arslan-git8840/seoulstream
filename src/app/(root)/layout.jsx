@@ -17,11 +17,11 @@ const Layout = async ({ children }) => {
                 <div>
                     <Sidebar />
                 </div>
-                <div >
+                <div className="flex-1">
                     <div>
                         <Header />
                     </div>
-                    <div className="sm:p-2 rounded-2xl pr-0 h-[87vh] overflow-scroll home">
+                    <div className="sm:p-2 mt-[6px] p-[1px] sm:mt-0 rounded-2xl pr-0 h-[87vh] overflow-scroll home">
                         {children}
                     </div>
 

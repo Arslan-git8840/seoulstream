@@ -17,7 +17,7 @@ const sidebarItems = [
 
 const Sidebar = () => {
   return (
-    <div className="w-fit h-[97vh] overflow-y-auto py-2 px-4 flex flex-col justify-between bg-white dark:bg-[#0C0E10] rounded-3xl">
+    <div className="w-fit h-[97vh] overflow-y-auto py-2 sm:px-4 px-0 flex flex-col justify-between bg-white dark:bg-[#0C0E10] rounded-3xl">
 
       <div>
         {/* Logo Section */}
@@ -29,6 +29,7 @@ const Sidebar = () => {
               height={50}
               alt="icon"
               priority
+              className="w-8 h-8 sm:w-12 sm:h-12"
             />
           </Link>
           <h1 className="sm:block hidden">SeoulStream</h1>
